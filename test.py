@@ -2,11 +2,13 @@ from flask import Flask, render_template, request, flash, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 import sqlite3 as sql
 from datetime import datetime
+import os
 
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///messages.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+#postgres://contact_query_databse_user:SYWt3zrIo3aEjJDqwcxemqaz6HuMMmkU@dpg-ch5l8s5269v5rfrcrp50-a.oregon-postgres.render.com/contact_query_databse
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
