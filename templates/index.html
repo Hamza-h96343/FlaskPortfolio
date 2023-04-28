@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title> Personal Portfolio Website</title>
+    <link rel = "stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#home">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#experience" class="menu-btn">Experience</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Hamza Hussain</div>
+                <div class="text-3">And I am a <span class="typing"></span></div>
+                <a href="#contact" class="hire">Hire Me</a>
+                <div class="social-buttons">
+
+                    <a href="https://github.com/Hamza-h96343" class="fab fa-github"
+                       target="_blank" rel="noopener noreferrer"></a>
+
+                    <a href="https://www.linkedin.com/in/syed-hussain-2732781b1/" class="fab fa-linkedin"
+                       target="_blank" rel="noopener noreferrer"></a>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class = "column left">
+                    <img src="static/images/hamza3.png" alt="Portrait image of Hamza Hussain">
+                </div>
+                <div class="column right">
+                    <div class="text">My name is Hamza Hussain and I am a <span class="typing-2"></span></div>
+                    <p>Hello future employers, friends, family, and strangers who might stumble across this. My name is Hamza and I am a Computer Engineer. I graduated with my
+                    BS in Computer Engineering from the University of California - Santa Cruz. I have experience in hardware design and embedded systems development.
+                    I also have substantial experience in doing Full Stack Web Development, Operating Systems Design, and Data Science/Machine Learning. I have a lot of
+                    creative hobbies as well, including 3D modeling, game design, painting, and producing music. I am highly energetic and passionate about all that I do. Check out
+                    my projects below.</p>
+                    <a href="resume.pdf" download>Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience section start -->
+    <section class="experience" id="experience">
+        <div class="max-width">
+            <h2 class="title">My Experiences</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openProjects(event, 'Software')" id="defaultOpen">Software</button>
+                <button class="tablinks" onclick="openProjects(event, 'Hardware')">Hardware</button>
+
+            </div>
+            <div id="Hardware" class="tabcontent">
+
+                <div class="left-arrow" align="left">
+                      <button onclick="plusSlidesHardware(-1)">
+                          <i class="fas fa-arrow-left"></i>
+                      </button>
+                </div>
+                <div class="Containers-Hardware">
+                    <div class="Projects">
+                        <div class="preview">
+                            <img src="static/images/pacman2.jpg" alt="Portrait image of Hamza Hussain">
+                        </div>
+                        <div class="explanation">
+                            <h1>
+                                Pacman On FPGA
+                            </h1>
+                            <p>
+                                Created a fully pledged old school arcade style pacman game on a FPGA using dvi to hdmi conversion in system verilog. I used multiple state machines
+                                and a good amount of modularity to make readable and easy to understand system verilog code in order to complete this project.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Containers-Hardware">
+                    <div class="Projects">
+                        <div class="preview">
+                            <img src="static/images/robot.png" alt="Portrait image of Hamza Hussain">
+                        </div>
+                        <div class="explanation">
+                            <h1>
+                                Vex Robotics
+                            </h1>
+                            <p>
+                                I did Robotics for 2 years. I went to Diablo Valley College for a summer course where we competed against a 100 other people in a Robotics challenge. My Team got
+                                3rd place. I worked on the physical design and controls of the robot. I also took robotics classes in my High School where I did various projects and
+                                also programmed drones. I demonstrated great design skills and using sensor information in an efficient way using various algorithms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Containers-Hardware">
+                    <div class="Projects">
+                        <div class="preview">
+                            <img src="static/images/glasses.png" alt="Portrait image of Hamza Hussain">
+                        </div>
+                        <div class="explanation">
+                            <h1>
+                                Caption Glasses
+                            </h1>
+                            <p>
+                                This was my Senior Project in college. Me and 4 others collaborated to create Glasses that take in audio info and display captions on the lenses.
+                                The primary purpose for this was to create an efficient and affordable way for hard of hearing individuals to communicate better with the world around them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-arrow" align="right">
+                      <button onclick="plusSlidesHardware(1)">
+                          <i class="fas fa-arrow-right"></i>
+                      </button>
+                </div>
+            </div>
+
+            <div id="Software" class="tabcontent">
+                <div class="left-arrow" align="left">
+                      <button onclick="plusSlidesSoftware(-1)">
+                          <i class="fas fa-arrow-left"></i>
+                      </button>
+                </div>
+                <div class="Containers-software">
+                    <div class="Projects">
+                        <div class="preview">
+                            <img src="static/images/spotify.png" alt="Portrait image of Hamza Hussain">
+                        </div>
+                        <div class="explanation">
+                            <h1>
+                                Spotify React App
+                            </h1>
+                            <p>
+                                Created a React app using the Spotify web API that you can use now for yourself(spotify account required). This app allows you to create a fixed size playlist
+                                with artists of your choosing. You can filter the songs by the specific albums you want to pull songs from and by selecting a mood.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Containers-software">
+                    <div class="Projects">
+                        <div class="preview">
+                            <img src="static/images/portfolioPage.jpg" alt="Portrait image of Hamza Hussain">
+                        </div>
+                        <div class="explanation">
+                            <h1>
+                                Personal Portfolio
+                            </h1>
+                            <p>
+                                This website was created using pure html, css, and javascript showing mastery in all 3 at the fundamental level.
+                                This website uses Python Flask as the backend language of choice to store form data and email any queries directly to me.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Containers-software">
+                    <div class="Projects">
+                        <div class="preview">
+                            <img src="static/images/pintos-logo.png" alt="Portrait image of Hamza Hussain">
+                        </div>
+                        <div class="explanation">
+                            <h1>
+                                Pintos OS Development
+                            </h1>
+                            <p>
+                                I developed multiple projects on Pintos OS which is a teaching OS created by Stanford University. I learned multiple aspects of system design, multithreading, syscalls, etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-arrow" align="right">
+                      <button onclick="plusSlidesSoftware(1)">
+                          <i class="fas fa-arrow-right"></i>
+                      </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My Services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Design</div>
+                        <p>I have experience in designing hardware using multiple tools such as system verilog. I have mechanical design experience such as robots.
+                        I have systems design experience as well such as OS design. I have limited mobile app design experience as well mainly on android phones</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Embedded Systems Development</div>
+                        <p>I have done multiple projects on embedded systems using a variety of SOCs and Chips. I have simulated arcade games, interface for a toaster oven,
+                        my caption glasses, and much more.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-align-justify"></i>
+                        <div class="text">Web Development</div>
+                        <p>My web development experience is evident by this website and the REACT app mentioned above which I recommend checking out.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="test">My Skills and Experiences</div>
+                    <p>I know a variety of hardware and software centric programming languages, multiple web dev frameworks for both front and back end, and knowledge of SQL and NOSQL databases. Some of the languages and tools I know are listed to the right
+                    others not listed include Kotlin, System Verilog, MYSQL, SQLLite, Blender, Photoshop, Premiere Pro, C#. I can pick up languages and skills quite fast which I would say is my best skill. </p>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line HTML"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line CSS"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line JS"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>C++/C</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line C"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Flask</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="line Csharp"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>SystemVerilog/Verilog</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="line JAVA"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get In Touch</div>
+                    <p>Have an opportunity I might be a good fit for? Message me!</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Hamza Hussain</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Concord, CA, USA</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">syed.hussain96343@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message Me</div>
+                    <form method="post" action="{{ url_for('contact_info') }}">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Enter Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="email" placeholder="Enter Email"  required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name="message" placeholder="Describe project.." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href='#'>Hamza Hussain</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+    </footer>
+
+
+    <script src="../static/scripts/script.js"></script>
+
+    <script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>
