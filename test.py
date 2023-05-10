@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, redirect, url_for
+from flask import Flask, render_template, request, flash, redirect, url_for, send_file
 from flask_sqlalchemy import SQLAlchemy
 import sqlite3 as sql
 import psycopg2
@@ -37,6 +37,13 @@ class Response(db.Model):
 @app.route('/')
 def portfolio():
     return render_template('index.html')
+
+
+@app.route('/download')
+def download():
+    path = 'templates/SyedHussainResume.pdf'
+    return send_file(path, as_attachment=True)
+
 
 @app.route('/', methods=["POST"])
 def contact_info():
